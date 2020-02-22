@@ -331,5 +331,8 @@ let g:Tex_MultipleCompileFormats='pdf,bib,pdf'
 let g:Tex_CompileRule_dvi='latex -synctex=1 --src-specials --interaction=nonstopmode $*'
 let g:Tex_CompileRule_ps='ps2pdf $*'
 let g:Tex_CompileRule_pdf='xelatex -synctex=1 --src-specials -interaction=nonstopmode $*'
+"Tex_ViewRule_ for forward search
 let g:Tex_ViewRule_pdf='evince_dbus.py'
+"Tex_ViewRuleComplete_ for general view
+let g:Tex_ViewRuleComplete_pdf="evince $*.pdf &" 
 let g:Tex_GotoError = 0
